@@ -1,0 +1,22 @@
+[build-system]
+requires      = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.backends.legacy:build"
+
+[project]
+name        = "yt-audio-mcp"
+version     = "1.0.0"
+description = "MCP server for parallel YouTube audio downloads via yt-dlp"
+readme      = "README.md"
+requires-python = ">=3.10"
+
+dependencies = [
+    "mcp>=1.0.0",
+    "yt-dlp>=2024.1.0",
+]
+
+[project.scripts]
+yt-audio-mcp = "yt_audio_mcp:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["yt_audio_mcp*"]
