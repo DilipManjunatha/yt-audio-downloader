@@ -1,12 +1,11 @@
 [build-system]
 requires      = ["setuptools>=68", "wheel"]
-build-backend = "setuptools.backends.legacy:build"
+build-backend = "setuptools.build_meta"
 
 [project]
 name        = "yt-audio-mcp"
 version     = "1.0.0"
 description = "MCP server for parallel YouTube audio downloads via yt-dlp"
-readme      = "README.md"
 requires-python = ">=3.10"
 
 dependencies = [
